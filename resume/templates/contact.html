@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+ <div class="row my-2">
+   <div class="col-4 text-center text-light my-3">
+     <h2 class="mt-5">Have something? Reach Out ASAP!</h2>
+     <h4 class="mt-5">ngenosolomon712@gmail.com</h3>
+     <div class="col-12 d-flex justify-content-center align-items center mt-5">
+      <a href="https://www.linkedin.com/in/kipkirui-ngeno-391b68382" 
+      target="_blank" class="ms-3">
+      <img src="{% static 'images/linkedin.png' %}" 
+      alt="LinkedIn" width="50" height="50"
+      class="social_links">
+    </a>
+    <a href="https://github.com/soloo4040"
+      target="_blank" class="ms-3">
+      <img src="{% static 'images/github.png' %}"
+       alt="GitHub" width="50" height="50"
+       class="social_links">
+     </a>
+    </div>  
+   </div>
+   
+   <div class="col-6 offset-1 mt-5">
+     <div class="container form-container ">
+       <form>
+       <div class="form-group ">
+         <label for="name">Name</label>
+         <input type="name" class="form-control" id="name" placeholder="Enter Your Name">
+       </div>
+       <div class="form-group m-3">
+         <label for="email">Email Address</label>
+         <input type="email" class="form-control" id="email" placeholder="Enter email">
+       </div>
+        <div class="form-group m-3">
+         <label for="phone number">Phone number</label>
+         <input type="integer" class="form-control" id="phone" placeholder="Enter Your Phone Number">
+       </div>
+        <div class="form-group m-3">
+         <label for="message">Message</label>
+         <textarea type="name" class="form-control" id="msg" placeholder="Message" rows="2"></textarea>
+       </div>
+       <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+  </div>
+   
+ </div>
+ 
+{% endblock %}

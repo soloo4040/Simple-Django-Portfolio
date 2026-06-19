@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row my-2">
+  {% for level in levels %}
+    
+    <div class="jumbotron jumbotron-fluid mt-5">
+      <h1 class="display4">{{level.school}}</h2>
+      <p class="lead">{{level.course}}</p>
+      <p class="lead">{{level.period}}</p>
+      <p class="lead">{{level.award}}</p>
+    </div>
+    
+  {% endfor %}
+</div>
+
+{% endblock %}

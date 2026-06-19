@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row my-5">
+  <div class="col-4 d-flex justify-content-center align-items-center">
+    <img src="{% static 'images/logo.jpg' %}"
+     alt="About Image" class="about-image">
+  </div>
+  <div class="col-8 text-left text-light mr-0">
+    <h2>Hey!</h2>
+    <p class="fs-5">
+      I am a backend developer with a strong foundation in Python,
+      Django, MySQL, and RESTful API development. I have hands-on
+      experience building scalable web applications, managing
+      databases, and implementing secure and efficient server-side
+      solutions. I enjoy solving problems and creating reliable
+      systems that deliver seamless user experiences.
+    </p>
+  </div>
+</div>
+
+<div class="row my-2">
+  <h2 style="color: #4fffb0">My Tech Stack</h2>
+  
+  <div class="d-flex justify-content-around align-items-center">
+    <img src="{% static 'images/html.png' %}" alt="HTML" 
+  width="60" height="60" class="img-fluid">
+  
+  <img src="{% static 'images/css.png' %}" alt="CSS" 
+  width="60" height="60" class="img-fluid">
+  
+  <img src="{% static 'images/javascript.jpg' %}" alt="JAVASCRIPT" 
+  width="60" height="60" class="img-fluid">
+  
+  <img src="{% static 'images/python.png' %}" alt="PYTHON" 
+  width="60" height="60" class="img-fluid">
+  
+  <img src="{% static 'images/django.jpg' %}" alt="DJANGO" 
+  width="60" height="60" class="img-fluid">
+  
+  <img src="{% static 'images/rest.png' %}" alt="DJANGO REST FRAMEWORK" 
+  width="60" height="60" class="img-fluid">
+  
+  <img src="{% static 'images/Postgresql.png' %}" alt="POSTGRESQL" 
+  width="60" height="60" class="img-fluid">
+  
+  <img src="{% static 'images/mysql.png' %}" alt="MYSQL" 
+  width="60" height="60" class="img-fluid">
+  
+  </div>
+  
+</div>
+{% endblock %}

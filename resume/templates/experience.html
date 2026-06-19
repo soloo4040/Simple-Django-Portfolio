@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row my-2">
+  {% for experience in experiences %}
+    
+    <div class="jumbotron jumbotron-fluid mt-5">
+      <h1 class="display4">{{experience.company}}</h2>
+      <p class="lead">{{experience.position}}</p>
+      <p class="lead">{{experience.department}}</p>
+      <p class="lead">{{experience.period}}</p>
+    </div>
+    
+  {% endfor %}
+</div>
+
+{% endblock %}

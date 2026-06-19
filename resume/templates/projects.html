@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row my-5">
+  {% for project in projects_show %}
+  
+  <div class="col-6 my-3">
+    
+   <h4 class="text-light display4">{{project.title}}</h4>
+   <img src="{% static project.path %}" 
+   width="300" height="500" class="img-fluid">
+   
+  </div>
+   
+   {% endfor %}
+</div>
+
+{% endblock %}
